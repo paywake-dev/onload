@@ -33,5 +33,6 @@
     $(window).on("load", () => {
       document.body.appendChild(banner)
     })
+    console.log("%cDEV", "color: red", "mode enabled")
   }
 })()
