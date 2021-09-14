@@ -19,6 +19,7 @@
     }
   }
   else {
+    console.log("%cDEV", "color: red", "mode enabled")
     if (!(new URLSearchParams(window.location.search)).get("hidebanner")) {
       let banner = document.createElement("div")
       banner.className = "__dev-banner"
@@ -35,6 +36,8 @@
         document.body.appendChild(banner)
       })
     }
-    console.log("%cDEV", "color: red", "mode enabled")
+    else {
+      console.log("%cHIDE-BANNER", "color: lime", "mode enabled")
+    }
   }
 })()
