@@ -19,20 +19,22 @@
     }
   }
   else {
-    let banner = document.createElement("div")
-    banner.className = "__dev-banner"
-    let text = document.createElement("p")
-    text.innerHTML = "You are currently in <B>DEV</B> mode."
-    let close = document.createElement("img")
-    close.src = "https://dev.paywake.net/package/dev.png"
-    close.onclick = () => {
-      banner.remove()
+    if (!(new URLSearchParams(window.location.search)).get("hidebanner")) {
+      let banner = document.createElement("div")
+      banner.className = "__dev-banner"
+      let text = document.createElement("p")
+      text.innerHTML = "You are currently in <B>DEV</B> mode."
+      let close = document.createElement("img")
+      close.src = "https://dev.paywake.net/package/dev.png"
+      close.onclick = () => {
+        banner.remove()
+      }
+      banner.appendChild(text)
+      banner.appendChild(close)
+      $(window).on("load", () => {
+        document.body.appendChild(banner)
+      })
     }
-    banner.appendChild(text)
-    banner.appendChild(close)
-    $(window).on("load", () => {
-      document.body.appendChild(banner)
-    })
     console.log("%cDEV", "color: red", "mode enabled")
   }
 })()
