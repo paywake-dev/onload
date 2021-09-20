@@ -36,15 +36,23 @@
       banner.appendChild(close)
       $(window).on("load", () => {
         const elements = document.body.querySelectorAll("*")
-        for (let element of elements) {
-            if (element.href) {
-                element.href = (element.href + "?source=dev")
-            }
+        for (let e of elements) {
+          if (e.href) {
+            e.href = (e.href + "?source=dev")
+          }
         }
         document.body.appendChild(banner)
       })
     }
     else {
+      $(window).on("load", () => {
+        const elements = document.body.querySelectorAll("*")
+        for (let element of elements) {
+          if (e.href) {
+            e.href = (e.href + "?source=dev&hidebanner=true")
+          }
+        }
+      })
       console.log("%cHIDE-BANNER", "color: lime", "mode enabled")
     }
   }
