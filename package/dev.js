@@ -47,7 +47,7 @@
     else {
       $(window).on("load", () => {
         const elements = document.body.querySelectorAll("*")
-        for (let element of elements) {
+        for (let e of elements) {
           if (e.href) {
             e.href = (e.href + "?source=dev&hidebanner=true")
           }
