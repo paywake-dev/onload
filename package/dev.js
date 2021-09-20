@@ -21,12 +21,6 @@
   }
   else {
     localStorage.setItem(LOCAL_STORAGE_TAG, true)
-    const elements = document.body.querySelectorAll("*")
-    for (let element of elements) {
-        if (element.href) {
-            element.href = (element.href + "?source=dev")
-        }
-    }
     console.log("%cDEV", "color: red", "mode enabled")
     if (!(new URLSearchParams(window.location.search)).get("hidebanner")) {
       let banner = document.createElement("div")
@@ -41,6 +35,12 @@
       banner.appendChild(text)
       banner.appendChild(close)
       $(window).on("load", () => {
+        const elements = document.body.querySelectorAll("*")
+        for (let element of elements) {
+            if (element.href) {
+                element.href = (element.href + "?source=dev")
+            }
+        }
         document.body.appendChild(banner)
       })
     }
