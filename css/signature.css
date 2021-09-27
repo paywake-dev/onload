@@ -1,0 +1,49 @@
+body {
+  font-family: 'Verdana';
+}
+
+p, a {
+  font-size: 12px;
+  line-height: 12px;
+  color: black;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+img {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+}
+
+h3 {
+  margin: 0px;
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 12px;
+}
+
+td {
+  padding: 0px;
+  padding-right: 10px;
+  vertical-align: bottom;
+}
+
+.name {
+  vertical-align: top;
+}
+
+.item {
+  padding-left: 20px;
+}
+
+.container {
+  padding: 30px;
+  background: url('https://raw.githubusercontent.com/paywake/dev/main/gradient.png');
+  background-size: cover;
+}
