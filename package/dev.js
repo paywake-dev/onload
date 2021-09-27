@@ -9,6 +9,7 @@
 
   const SOURCE = (new URLSearchParams(window.location.search)).get("source")
   if (SOURCE === "qr") {
+    localStorage.setItem(LOCAL_STORAGE_TAG, false)
     if (IS_REDIRECTING) {
       window.location.replace(QR_REDIRECT)
     }
