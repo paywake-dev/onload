@@ -30,7 +30,7 @@
       let text = document.createElement("p")
       text.innerHTML = "You are currently in <B>DEV</B> mode."
       let close = document.createElement("img")
-      close.src = "https://dev.paywake.net/package/dev.png"
+      close.src = "https://onload.paywake.net/package/dev.png"
       close.onclick = () => {
         banner.remove()
         window.location.replace(location.href.toString() + "&hidebanner=true")
