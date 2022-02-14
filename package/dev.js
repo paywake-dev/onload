@@ -1,7 +1,7 @@
 (() => {
 
   //TOGGLE THIS ON LAUNCH
-  const IS_REDIRECTING = true
+  const IS_REDIRECTING = false
 
   const REDIRECT = "https://launch.paywake.net"
   const QR_REDIRECT = "https://launch.paywake.net/?source=qr"
