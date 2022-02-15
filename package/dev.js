@@ -28,7 +28,7 @@
       let banner = document.createElement("div")
       banner.className = "__dev-banner"
       let text = document.createElement("p")
-      text.innerHTML = "You're using an unstable version of Paywake. <a onclick='window.location.replace(window.location.href.replace(\"dev.\",\"\"))' style='color: white; text-decoration-color: white;'>Back to Safety</a>"
+      text.innerHTML = "You're using an unstable version of Paywake. <a onclick='window.location.replace(window.location.href.replace(\"dev.\",\"\"))' style='color: white; text-decoration-color: white; text-decoration: underline; cursor: pointer;'>Back to Safety</a>"
       let close = document.createElement("img")
       close.src = "https://onload.paywake.net/package/dev.png"
       close.onclick = () => {
