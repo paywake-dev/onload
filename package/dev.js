@@ -37,6 +37,10 @@
       }
       banner.appendChild(text)
       banner.appendChild(close)
+      $(window).on("load", () => {
+        $("head").append("<link rel='stylesheet' type='text/css' href='https://onload.paywake.net/package/dev.css'>");
+        document.body.appendChild(banner)
+      })
     }
     else {
       console.log("%cHIDE-BANNER", "color: lime", "mode enabled")
