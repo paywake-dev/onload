@@ -33,7 +33,6 @@
       close.src = "https://onload.paywake.net/package/dev.png"
       close.onclick = () => {
         banner.remove()
-        window.location.replace(location.href.toString() + "&hidebanner=true")
       }
       banner.appendChild(text)
       banner.appendChild(close)
